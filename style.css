@@ -57,23 +57,14 @@ img {
   justify-content: space-between;
 }
 
-.hero .hero-content .hero-heading {
-  font-size: 110px;
-  line-height: 110px;
-  letter-spacing: -1.1px;
-}
-
-
-.hero .hero-content .hero-heading span img{
+.hero .hero-content .hero-heading span img {
   height: 125px;
   width: 125px;
   margin: -24px;
 }
 
 .hero .hero-content .hero-text {
-  font-family: 'Oswald', sans-serif;
   width: 600px;
-  font-size: 1.5rem;
 }
 
 .hero .hero-content button {
@@ -81,26 +72,85 @@ img {
 }
 
 .hero .container .hero-image {
-margin: auto 0;
-transform: rotate(-2.36deg);
-background-color: aqua;
+  margin: auto 0;
+  width: 40%;
 }
 
 .hero .container .hero-image img {
-  width: auto;
-  height: 1122.371px;
+  width: 100%;
+  height: 100%;
   transform: rotate(-2.36deg);
-  background-color: aqua;
-  }
+}
 
+/* About Section */
+.about .about-row {
+  display: flex;
+  padding: 160px 0;
+}
 
+.about .about-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
 
+.about-row:nth-child(1) {
+  position: relative;
+  z-index: 1;
+  /* width: 890px; */
+}
 
+.about-row:nth-child(1) .about-fact-heading {
+  position: relative;
+  z-index: 1;
+  width: 890px;
+}
 
+.about-row .about-fact-text {
+  position: relative;
+  z-index: 1;
+  width: 480px;
+}
 
+.about-row:nth-child(1) .about-image {
+  position: absolute;
+  top: 371px;
+  left: 629px;
+  width: 580px;
+  z-index: 0;
+}
 
+.about-row:nth-child(2) {
+  align-items: center;
+}
+
+.about-row:nth-child(2) .about-image {
+  padding-right: 10rem;
+  min-width: 600px;
+}
+
+.about .video-content {
+  background: url('images/simona-sergi-CLn3Egvg8oc-unsplash\ 1.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .video-content button {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about .video-content button img {
+  width: 5rem;
+  height: 5rem;
+}
+
+/* Utilities */
 /* Container */
-
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -124,7 +174,6 @@ background-color: aqua;
   text-align: center;
   cursor: pointer;
   transition: 0.05s;
-
 }
 
 .btn-primary:hover {
@@ -145,9 +194,17 @@ background-color: aqua;
   background-color: var(--light-color);
   color: var(--dark-color);
 }
+
 .btn-dark {
   background-color: var(--dark-color);
   color: #fff;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-block {
@@ -157,30 +214,53 @@ background-color: aqua;
 
 /* Text Classes */
 .text-xxl {
-  font-size: 5rem;
-  line-height: 1.2;
-  font-weight: 600;
+  font-family: 'Bowlby One SC', sans-serif;
+  font-size: 6.875rem;
+  line-height: 6.875rem;
+  font-weight: 400;
+  letter-spacing: -0.06875rem;
   padding: 40px 0 20px;
 }
 
 .text-xl {
-  font-size: 2.2rem;
-  line-height: 1.4;
-  font-weight: normal;
+  font-family: 'Bowlby One SC', sans-serif;
+  font-size: 4.5rem;
+  line-height: 4rem;
+  font-weight: 400;
+  letter-spacing: -0.045rem;
+  padding: 30px 0 20px;
+}
+
+.text-lg {
+  font-family: 'Bowlby One SC', sans-serif;
+  font-size: 2.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.045rem;
   padding: 30px 0 20px;
 }
 
 .text-md {
-  font-size: 1.2rem;
-  line-height: 1.4;
-  font-weight: normal;
-  padding: 20px 0 10px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 400;
+  padding: 0;
 }
 
 .text-sm {
-  font-size: 0.9rem;
-  line-height: 1.4;
-  font-weight: normal;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  font-weight: 400;
+  padding: 10px 0 5px;
+}
+
+.text-xsm {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
   padding: 10px 0 5px;
 }
 
@@ -202,4 +282,9 @@ background-color: aqua;
 .bg-dark {
   background-color: var(--dark-color);
   color: #fff;
+}
+
+.bg-transparent {
+  background-color: transparent;
+  color: #000;
 }
