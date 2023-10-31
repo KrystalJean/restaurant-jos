@@ -244,9 +244,32 @@ img {
   text-transform: uppercase;
 }
 
+/* Social Section */
+.instagram-photos {
+  display: flex;
+  width: 100%;
+}
 
+.instagram-photos > * {
+  background-color: #eef866;
+  /* width: 200rem; */
+  min-height: 288px;
+  min-width: 289px;
+  height: 100%;
+}
 
-
+.instagram-photos p {
+  color: #ee4a1e;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.66669rem;
+  font-weight: 600;
+  line-height: 4rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 6rem 3rem 2.75rem;
+}
 
 
 
