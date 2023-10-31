@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -95,7 +96,6 @@ img {
 .about-row:nth-child(1) {
   position: relative;
   z-index: 1;
-  /* width: 890px; */
 }
 
 .about-row:nth-child(1) .about-fact-heading {
@@ -107,7 +107,7 @@ img {
 .about-row .about-fact-text {
   position: relative;
   z-index: 1;
-  width: 480px;
+  width: 600px;
 }
 
 .about-row:nth-child(1) .about-image {
@@ -148,6 +148,43 @@ img {
   width: 5rem;
   height: 5rem;
 }
+
+/* Menu Section */
+.menu {
+  padding: 160px 0;
+}
+
+.menu .menu-text {
+  width: 800px;
+}
+
+.menu .card {
+  width: 323px;
+  background-color: #fff;
+  color: #000;
+}
+
+.menu .card .card-content {
+  padding: 24px;
+}
+
+.menu .card .card-content .burger-heading {
+  font-family: 'Bowlby One SC', sans-serif;
+}
+
+.menu .burger-options ul{
+  display: flex;
+  gap: 1rem;
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+}
+
+
+
+
+
+
+
 
 /* Utilities */
 /* Container */
