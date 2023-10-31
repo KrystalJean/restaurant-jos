@@ -47,7 +47,7 @@ img {
   display: flex;
 }
 
-.navbar ul {
+.nav-links ul {
   display: flex;
   gap: 2rem;
 }
@@ -150,12 +150,25 @@ img {
 }
 
 /* Menu Section */
+.organic-meats-sign {
+  position: absolute;
+  top: -45px;
+}
+
 .menu {
   padding: 160px 0;
+  position: relative;
 }
 
 .menu .menu-text {
   width: 800px;
+}
+
+.menu .burger-options ul {
+  display: flex;
+  gap: 1rem;
+  padding-top: 6rem;
+  padding-bottom: 5rem;
 }
 
 .menu .card {
@@ -164,19 +177,41 @@ img {
   color: #000;
 }
 
+.menu .card:nth-child(1) {
+  position: relative;
+}
+
+.new-item {
+  position: absolute;
+  right: -20px;
+  top: -50px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: drop-shadow(2px 4px 8px #585858);
+}
+
+.new-item p {
+  color: var(--primary-color);
+  position: absolute;
+  top: 30;
+  right: 45px;
+  transform: rotate(15deg);
+
+  font-family: Oswald;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+  text-transform: uppercase;
+}
+
 .menu .card .card-content {
   padding: 24px;
 }
 
 .menu .card .card-content .burger-heading {
   font-family: 'Bowlby One SC', sans-serif;
-}
-
-.menu .burger-options ul {
-  display: flex;
-  gap: 1rem;
-  padding-top: 6rem;
-  padding-bottom: 5rem;
 }
 
 /* Reviews Section */
@@ -271,12 +306,54 @@ img {
   padding: 3rem 6rem 3rem 2.75rem;
 }
 
+/* Footer Section */
+.footer {
+  padding-top: 9.24rem;
+}
 
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
 
+.footer .left-column .footer-text {
+  padding: 1rem 0;
+}
 
+.footer .left-column {
+  max-width: 600px;
+}
 
+.footer .left-column form {
+  display: flex;
+}
 
+.footer .left-column form button {
+  text-transform: uppercase;
+  width: 131px;
+  height: auto;
+  padding: 1rem 1.5rem;
+  border: none;
+}
 
+.footer .left-column input {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  border: solid #000 1px;
+  padding: 1.25rem 1rem;
+}
+
+.footer .left-column input::placeholder {
+  color: #000;
+}
+
+.policy-links ul {
+  display: flex;
+  gap: 0.75rem;
+  padding: 5rem 0 3rem;
+  text-transform: uppercase;
+}
 
 /* Utilities */
 /* Container */
