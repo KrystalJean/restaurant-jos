@@ -4,300 +4,337 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="images/smiley.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <title>Jo's Restaurant</title>
+  <title>Jo's Burgers</title>
 </head>
 
 <body>
-  <!-- Navigation -->
-  <nav class="navbar bg-primary">
+
+  <nav id='main-nav' class='main-nav'>
     <div class="container">
-      <div class="logo">
-        <a href="index.html">
-          <img src="images/logo-black.png " alt="">
-        </a>
-      </div>
-      <div class="nav-links">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#social">Social</a></li>
-        </ul>
-      </div>
+      <p class="logo">Jo's<sup> &copy;</sup></p>
+
+      <button class='nav-menu-btn' id='nav-menu-btn'>
+        <hr class='line top-line'>
+        <hr class='line middle-line'>
+        <hr class='line bottom-line'>
+      </button>
+
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Social</a></li>
+        <li class='smiley-mobile'><img src="/images/smiley.png" alt=""></li>
+      </ul>
     </div>
   </nav>
 
-  <!-- Hero Section  -->
-  <section class="hero bg-primary">
-    <div class="container">
-      <div class="hero-content">
-        <h1 class="hero-heading text-xxl">New York's <span>Favorite <img src="images/smiley.png"alt="classic yellow smiley face"></span> Burger</h1>
-        <p class="hero-text text-md">In a world so painfully serious, yet so ridiculous, you knew it was only a matter
-          of time before plant-based steak became a thing.</p>
-        <button class="btn btn-dark">Browse Menu</button>
+  <header>
+    <div class='container'>
+      <div>
+        <h1>
+          New York's </br>
+          Favorite<img class='smiley' src="images/smiley.png" alt=""> </br>
+          Burger
+        </h1>
+
+        <p class='txt-lg'>
+          In a world so painfully serious, yet so ridiculous, you knew it was only a matter of time before plant-based
+          steak became a thing.
+        </p>
+
+        <img src="/images/burger-hero.png" alt="Burger" class="mobile-header-img">
+
+        <a href="#" class="btn">Browse Menu</a>
       </div>
-      <div class="hero-image">
-        <img src="images/pexels-alleksana-7497224 1.png" alt="">
+
+      <img src="/images/burger-hero.png" alt="Burger" class="header-img">
+    </div>
+  </header>
+
+  <section id='about'>
+    <div class="container">
+
+      <div class='about-item'>
+        <h2>
+          Hi, We're Jo's Burgers, a collective of creators who love burgers and good mood.
+        </h2>
+
+        <figure>
+          <img src="images/kitchen-1.png" alt="">
+          <figcaption>This is Jo. He started everything 40 years ago.</figcaption>
+        </figure>
+      </div>
+
+      <div class='about-item'>
+        <img src="images/instagram-1.png" alt="">
+
+        <div>
+          <h2>Food is for everyone.</h2>
+          <p class='txt-primary'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="about-item video-wrapper">
+      <video class="video" poster="images/kitchen-2-desktop.png">
+        <source src="#" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <video class="video-mobile" poster="images/kitchen-2-mobile.png">
+        <source src="#" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-title">
+        <span>We're Different</span>
+        <span class="play-button">&#9654;</span>
+      </div>
+      <img class='icon-organic-meats' src="images/organic-meats.png" alt="">
+    </div>
+
+  </section>
+
+  <section id='menu' class="menu">
+    <div class="container">
+      <h2>Our Burgers</h2>
+      <p class='txt-primary'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+
+      <div class='menu-wrapper'>
+        <div class="menu-item">
+          <img src="/images/burger-1.png" alt="">
+          <div class="text">
+            <p class="title">Shrimp Yo!</p>
+            <p class="description">Grilled shrimp burger with coleslaw in a homemade fluffy bun.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="/images/burger-2.png" alt="">
+          <div class="text">
+            <p class="title">Double Trouble</p>
+            <p class="description">Angus Beef burger with Gouda cheese and bacon in a sesame bun.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="/images/burger-3.png" alt="">
+          <div class="text">
+            <p class="title">Juicy Jo</p>
+            <p class="description">Beef Burger with fried onion toped with ragu sauce in a rye bun.</p>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <img src="/images/burger-4.png" alt="">
+          <div class="text">
+            <p class="title">Crispy Chi</p>
+            <p class="description">Beef Burger with fried onion toped with ragu sauce in a rye bun.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-wrapper">
+      <div class="banner">
+        <p class='txt-primary'>
+          Life is too short to just eat salads
+          <img src="images/star-sm.png" alt="">
+          Life is too short to just eat salads
+          <img src="images/star-sm.png" alt="">
+          Life is too short to just eat salads
+          <img src="images/star-sm.png" alt="">
+          Life is too short to just eat salads
+          <img src="images/star-sm.png" alt="">
+          Life is too short to just eat salads
+          <img src="images/star-sm.png" alt="">
+        </p>
+      </div>
+
+      <div class="banner">
+        <p class='txt-primary'>
+          <img src="images/star-sm.png" alt="">
+          Life is too short to just eat salads
+          <img src="images/star-sm.png" alt="">
+          Life is too short to just eat salads
+          <img src="images/star-sm.png" alt="">
+          Life is too short to just eat salads
+          <img src="images/star-sm.png" alt="">
+          Life is too short to just eat salads
+          <img src="images/star-sm.png" alt="">
+          Life is too short to just eat salads
+          <img src="images/star-sm.png" alt="">
+          Life is too short to just eat salads
+          <img src="images/star-sm.png" alt="">
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="about bg-light">
+  <section id="reviews">
     <div class="container">
-      <div class="about-row">
-        <div class="about-content">
-          <h2 class="about-fact-heading text-xl">Hi, We're Jo's Burgers, a collective of creators who <br> Love burger
-            and good mood.</h2>
-          <p class="about-fact-text text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div class="about-image">
-          <img src="images/caleb-lebourgeois-ABYdHc5CNzA-unsplash 1.png" alt="Jo hard at work in the kitchen.">
-          <figcaption class="text-center text-md bg-transparent">This is Jo. He started everything 40 years ago.
-          </figcaption>
-        </div>
-      </div>
 
-      <div class="about-row">
-        <div class="about-content">
-          <h2 class="about-fact-heading text-xl">Food is for everyone.</h2>
-          <p class="about-fact-text text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div class="about-image">
-          <img src="images/simona-sergi-k5Pf8OSA7xo-unsplash 1.png" alt="Sign reads, 'We are open until closed' ">
-        </div>
-      </div>
+      <h2>Some Reviews</h2>
+      <p class='txt-primary'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua.</p>
+      <div class="reviews-wrapper">
 
-    </div>
-    <div class="video-content">
-      <button class="btn-transparent text-lg">
-        <p>We're Different</p>
-        <img src="images/play-button-img.png" alt="">
-      </button>
+        <div class="review-item">
+          <img src="images/review-1.png" alt="">
+          <div class="text">
+            <p class='title'>uideli.com</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img src="images/review-4.png" alt="">
+          <div class="text">
+            <p class='title'>Jessica from Eater.com</p>
+            <p>Accusantium doloremque laudantium, totam rem aperiam.</p>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img src="images/review-6.png" alt="">
+          <div class="text">
+            <p class='title'>We love food</p>
+            <p>Just in love with these burgers!</p>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img src="images/review-2.png" alt="">
+          <div class="text">
+            <p class='title'>Andreea @eattwice</p>
+            <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img src="images/review-3.png" alt="">
+          <div class="text">
+            <p class='title'>Just Maria</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.</p>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img src="images/review-4.png" alt="">
+          <div class="text">
+            <p class='title'>Jessica from Eater.com</p>
+            <p>Accusantium doloremque laudantium, totam rem aperiam.p>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img src="images/review-5.png" alt="">
+          <div class="text">
+            <p class='title'>Matthew Eats All</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+              rem aperiam.
+              <br><br>
+              Just the best in town. Try it!
+            </p>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img src="images/review-6.png" alt="">
+          <div class="text">
+            <p class='title'>We love food</p>
+            <p>Just in love with these burgers!</p>
+          </div>
+        </div>
+
+        <div class="review-item">
+          <img src="images/review-1.png" alt="">
+          <div class="text">
+            <p class='title'>uideli.com</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</p>
+          </div>
+        </div>
+
+        <button id="load-more-btn" class='load-more-btn'>Load More</button>
+
+      </div>
     </div>
   </section>
 
-  <!-- Menu Section -->
-  <section id="menu" class="menu bg-light">
+  <section id="social">
+    <div class="instagram-wrapper">
+      <img src="images/instagram-1.png" alt="">
+      <img src="images/instagram-2.png" alt="">
+      <img src="images/instagram-3.png" alt="">
+      <img src="images/instagram-4.png" alt="">
+      <div>
+        <p>Follow us <br> on <br> instagram</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
     <div class="container">
-      <img class="organic-meats-sign" src="images/organic-meats.png" alt="">
-      <h2 class="menu-heading text-xl">Our Burgers</h2>
-      <p class="menu-text text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat.</p>
-      <div class="burger-options">
+      <nav class="footer-nav">
+        <p class="logo">Jo's<sup> &copy;</sup></p>
+
         <ul>
-          <li class="card text-center">
-            <div class="new-item">
-              <img src="images/Vector9pt.png" alt="">
-              <p>NEW</p>
-            </div>
-            <img src="images/pexels-alleksana-7497224 1.png" alt="">
-            <div class="card-content">
-              <h3 class="burger-heading text-md">Shrimp Yo!</h3>
-              <p class="burger-text text-xsm">Grilled shrimp burger with colesaw in a homemade fluffy bun.</p>
-            </div>
-          </li>
-          <li class="card text-center">
-            <img src="images/pexels-adrian-dorobantu-2089717 1.png" alt="">
-            <div class="card-content">
-              <h3 class="burger-heading text-md">Double Trouble</h3>
-              <p class="burger-text text-xsm">Angus Beef burger with Gouda cheese and bacon in a sesame bun.</p>
-            </div>
-          </li>
-          <li class="card text-center">
-            <img src="images/pexels-jonathan-borba-2983104 1.png" alt="">
-            <div class="card-content">
-              <h3 class="burger-heading text-md">Juicy Jo</h3>
-              <p class="burger-text text-xsm">Beef Burger with fried onion toped with ragu sauce in a rye bun.</p>
-            </div>
-          </li>
-          <li class="card text-center">
-            <img src="images/pexels-enesfi̇lm-8130752 1.png" alt="">
-            <div class="card-content">
-              <h3 class="burger-heading text-md">Crispy Chi</h3>
-              <p class="burger-text text-xsm">Beef Burger with fried onion toped with ragu sauce in a rye bun.</p>
-            </div>
-          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Social</a></li>
         </ul>
-      </div>
+      </nav>
 
-    </div>
+      <div class="subscription-wrapper">
+        <h3>Subscribe to our newsletter</h3>
+        <p>
+          By subscribing to our newsletter, you will receive the latest tips, and promotions about our products and
+          services straight to your inbox.
+        </p>
 
-
-  </section>
-
-  <section id="reviews" class="reviews bg-light">
-    <div class="banner">
-      <p class="text-md">Life is too short to eat just salads</p>
-      <img src="images/Vector8pt.png" alt="">
-      <p class="text-md">Life is too short to eat just salads</p>
-      <img src="images/Vector8pt.png" alt="">
-      <p class="text-md">Life is too short to eat just salads</p>
-      <img src="images/Vector8pt.png" alt="">
-      <p class="text-md">Life is too short to eat just salads</p>
-      <img src="images/Vector8pt.png" alt="">
-
-    </div>
-    <div class="banner">
-      <img src="images/Vector8pt.png" alt="">
-      <p class="text-md">Life is too short to eat just salads</p>
-      <img src="images/Vector8pt.png" alt="">
-      <p class="text-md">Life is too short to eat just salads</p>
-      <img src="images/Vector8pt.png" alt="">
-      <p class="text-md">Life is too short to eat just salads</p>
-      <img src="images/Vector8pt.png" alt="">
-      <p class="text-md">Life is too short to eat just salads</p>
-      <img src="images/Vector8pt.png" alt="">
-      <p class="text-md">Life is too short to eat just salads</p>
-      <img src="images/Vector8pt.png" alt="">
-
-    </div>
-
-    <div class="container">
-      
-      <h2 class="reviews-heading text-xl">Some Reviews</h2>
-      <p class="reviews-text text-md">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua.</p>
-      <div class="review-cards">
-        <ul>
-          <li class="card">
-            <img src="images/68.png" alt="">
-            <div class="card-content">
-              <h4 class="card-heading text-sm">UIDELI.COM</h4>
-              <p class="card-text text-xsm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </li>
-
-          <li class="card">
-            <img src="images/71.png" alt="">
-            <div class="card-content">
-              <div class="card-heading text-sm">Jessica from Eater.com</div>
-              <div class="card-text text-xsm">Accusantium doloremque laudantium, totam rem aperiam.</div>
-            </div>
-          </li>
-
-          <li class="card">
-            <img src="images/73.png" alt="">
-            <div class="card-content">
-              <div class="card-heading text-sm">We love food</div>
-              <div class="card-text text-xsm">Just in love with these burgers!</div>
-            </div>
-          </li>
-
-          <li class="card">
-            <img src="images/66.png" alt="">
-            <div class="card-content">
-              <h4 class="card-heading text-sm">Andreea @eattwice</h4>
-              <p class="card-text text-xsm">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
-            </div>
-          </li>
-
-          <li class="card">
-            <img src="images/55.png" alt="">
-            <div class="card-content">
-              <div class="card-heading text-sm">Just Maria</div>
-              <div class="card-text text-xsm">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat.</div>
-            </div>
-          </li>
-
-          <li class="card">
-            <img src="images/71.png" alt="">
-            <div class="card-content">
-              <div class="card-heading text-sm">Jessica from Eater.com</div>
-              <div class="card-text text-xsm">Accusantium doloremque laudantium, totam rem aperiam.</div>
-            </div>
-          </li>
-
-          <li class="card">
-            <img src="images/72.png" alt="">
-            <div class="card-content">
-              <div class="card-heading text-sm">Matthew eats all</div>
-              <div class="card-text text-xsm">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                doloremque laudantium, totam rem aperiam. Just the best in town. Try it!</div>
-            </div>
-          </li>
-
-          <li class="card">
-            <img src="images/73.png" alt="">
-            <div class="card-content">
-              <div class="card-heading text-sm">We love food</div>
-              <div class="card-text text-xsm">Just in love with these burgers!</div>
-            </div>
-          </li>
-
-          <li class="card">
-            <img src="images/68.png" alt="">
-            <div class="card-content">
-              <div class="card-heading text-sm">UIDELI.COM</div>
-              <div class="card-text text-xsm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</div>
-            </div>
-          </li>
-
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="social" class="social">
-    <div class="instagram-photos">
-      <img src="images/simona-sergi-k5Pf8OSA7xo-unsplash 2.png" alt="">
-      <img src="images/pexels-alleksana-7497229.png" alt="">
-      <img src="images/pexels-alleksana-7497216.png" alt="">
-      <img src="images/pexels-alleksana-7497217.png" alt="">
-      <p>Follow us on instagram</p>
-    </div>
-  </section>
-
-  <footer class="footer bg-primary">
-    <div class="container">
-      <div class="left-column">
-        <img src="images/logo-black.png" alt="">
-        <h4 class="footer-heading text-lg">Subscribe to our newsletter</h4>
-        <p class="footer-text text-xsm">By subscribing to our newsletter, you will receive the latest tips, and
-          promotions about our
-          products and services straight to your inbox.</p>
-        <form action="">
-          <input class="text-xsm" type="email" id="email" placeholder="Enter your email">
-          <button type="submit" class="btn-block btn-dark text-sm">Subscribe</button>
+        <form action="#" method="post">
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          <button class='btn' type="submit">Subscribe</button>
         </form>
       </div>
-      <div class="right-column">
-        <nav class="nav-links">
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#reviews">Reviews</a></li>
-            <li><a href="#social">Social</a></li>
-          </ul>
-        </nav>
-      </div>
-      <nav class="policy-links text-xsm">
+
+      <nav class="footer-nav-mobile">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Social</a></li>
+        </ul>
+      </nav>
+
+      <nav class="legal-nav">
         <ul>
           <li><a href="#">Privacy</a></li>
           <li><a href="#">Terms</a></li>
-          <li><a href="#">Accessibilty</a></li>
+          <li><a href="#">Accessibility</a></li>
         </ul>
       </nav>
 
     </div>
   </footer>
 
+
+
+
+
+  <script src="script.js"></script>
 </body>
 
 </html>
