@@ -13,6 +13,7 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -90,8 +91,13 @@ video {
 .logo {
   font-family: var(--major-font);
   font-size: 2rem;
+  color: #000;
   margin: 0;
   text-transform: uppercase;
+}
+
+.logo:hover {
+  color: #222;
 }
 
 .main-nav .logo sup {
@@ -115,6 +121,10 @@ nav ul a {
 
 nav a:hover {
   color: white;
+}
+
+nav a:active {
+  scale: 0.95;
 }
 
 nav ul .smiley-mobile {
@@ -313,7 +323,7 @@ h2 {
   display: flex;
   gap: 1rem;
   padding-top: 1rem;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
 }
 
 .menu .menu-wrapper .menu-item {
@@ -371,9 +381,13 @@ h2 {
 /* #endregion - Food Menu Section */
 
 /* #region - Reviews Section */
+#reviews {
+  padding-top: 5rem;
+}
 .reviews-wrapper {
   column-count: 3;
   column-gap: 1rem;
+  padding-bottom: 3rem;
 }
 
 .review-item {
@@ -421,7 +435,7 @@ h2 {
 
 /* #region - Social Section */
 .instagram-wrapper {
-  margin-top: 5rem;
+  padding-top: 5rem;
   column-count: 5;
   gap: 0;
 }
@@ -706,7 +720,7 @@ form .btn {
   }
 
   #menu {
-    padding-top: 3rem;
+    padding-top: 8rem;
   }
 
   .menu .container .menu-wrapper {
